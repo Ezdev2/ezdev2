@@ -50,4 +50,4 @@
 ## 🚀 Featured Project
 Check out my [Vue.js Template](https://github.com/Ezdev2/website-vue-template) to kickstart your frontend projects!
 
-[![Click to View Template](path/to/your/screenshot.png)](https://website-vue-template.netlify.app)
+[![Click to View Template](https://github.com/Ezdev2/ezdev2/blob/main/website-vue-template.png)](https://website-vue-template.netlify.app)
