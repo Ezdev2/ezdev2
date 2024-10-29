@@ -17,20 +17,22 @@
             </div>
         </td>
         <td>
-            <h3 align="center">Languages & Frameworks</h3>
+            <h2 align="center">Languages, Frameworks & Tools</h2>
             <div id="tecno" align="center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" alt="html" width="40"/>&nbsp;
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" alt="css" width="40"/>&nbsp;
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="vue" width="40"/>&nbsp;
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" alt="react" width="40"/>&nbsp;
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="javascript" width="40"/>&nbsp; 
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="java" width="40"/>&nbsp;
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="python" width="40"/>&nbsp;
-            </div>
-        </td>
-        <td>
-            <div align="center">
-                <h2>Tools</h2>
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg" alt="vs code" width="40"/>&nbsp;
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg" alt="chrome" width="40"/>&nbsp;
+                <img src="https://user-images.githubusercontent.com/607635/94574444-24e43f00-0241-11eb-95e8-add939c5cacb.png" alt="airtable" width="40"/>&nbsp;
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="figma" width="40"/>&nbsp;
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg" alt="ubuntu" width="40"/>&nbsp;
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="postgresql" width="40"/>&nbsp;
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github" width="40"/>&nbsp;
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" alt="gitlab" width="40"/>&nbsp;
             </div>
         </td>
     </tr>
@@ -39,10 +41,12 @@
 <table align="center">
     <tr>
         <td>
-            ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ezdev2&show_icons=true&theme=github_dark)
+            <img src="https://github-readme-stats.vercel.app/api?username=ezdev2&show_icons=true&theme=github_dark" alt="Anurag's GitHub stats" />
         </td>
         <td>
-            [![GitHub Streak](https://streak-stats.demolab.com?user=ezdev2&theme=github_dark_blue&card_width=497)](https://git.io/streak-stats)
+            <a href="https://git.io/streak-stats">
+                <img src="https://streak-stats.demolab.com?user=ezdev2&theme=github_dark_blue&card_width=497" alt="GitHub Streak" />
+            </a>
         </td>
     </tr>
 </table>
