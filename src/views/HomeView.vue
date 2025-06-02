@@ -17,7 +17,7 @@
     </div>
 
   </div>
-  <div data-aos="fade-up" data-aos-delay="500">
+  <div style="margin-top: 54px;" data-aos-delay="500">
     <Contact />
   </div>
 </template>
