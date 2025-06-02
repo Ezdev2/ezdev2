@@ -10,8 +10,8 @@
 
         <nav :class="['navbar', { 'active': menuActive }]">
           <ul class="menu-list">
-            <li><router-link to="/" @click="closeMenu">Accueil</router-link></li>
-            <li><router-link to="/#about" @click="closeMenu">À propos</router-link></li>
+            <li><router-link to="/" @click="closeMenu">Home</router-link></li>
+            <li><router-link to="/#about" @click="closeMenu">About me</router-link></li>
             <li><router-link to="/#portfolio" @click="closeMenu">Portfolio</router-link></li>
             <li><router-link to="/#resume" @click="closeMenu">CV</router-link></li>
             <li><router-link to="/#contact" @click="closeMenu">Contact</router-link></li>
