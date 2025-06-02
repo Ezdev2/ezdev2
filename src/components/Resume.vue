@@ -3,7 +3,7 @@
     <div class="container">
         <div class="section-title text-center">
             <h2>Curriculum vitæ</h2>
-            <a href="../assets/EZRA_FANOMEZANTSOA_CV.pdf" class="btn-download">
+            <a href="/assets/EZRA_FANOMEZANTSOA_CV.pdf" class="btn-download">
                 <i class="bi bi-download"></i>
                 Download CV
             </a>
