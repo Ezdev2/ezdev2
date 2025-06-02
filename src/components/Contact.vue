@@ -2,8 +2,8 @@
   <section id="contact" class="contact-section">
     <div class="container">
       <div class="section-title">
-        <h2>Contact</h2>
-        <p>Ready to bring your digital project to life ?</p>
+        <h2>Ready to bring your digital project to life ?</h2>
+        <p>Let's talk about your project !</p>
       </div>
 
       <p class="intro">
@@ -104,16 +104,16 @@
             <div class="info-content">
               <h3>Social Media</h3>
               <div class="social-links">
-                <a href="https://github.com/Ezdev2" class="social-link github">
+                <a href="https://github.com/Ezdev2" class="social-link github" target="_blank">
                   <i class="bi bi-github"></i>
                 </a>
-                <a href="https://www.facebook.com/profile.php?id=100009140898267" class="social-link facebook">
+                <a href="https://www.facebook.com/profile.php?id=100009140898267" class="social-link facebook" target="_blank">
                   <i class="bi bi-facebook"></i>
                 </a>
-                <a href="https://www.instagram.com/ezdev2/" class="social-link instagram">
+                <a href="https://www.instagram.com/ezdev2/" class="social-link instagram" target="_blank">
                   <i class="bi bi-instagram"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/ezra-fanomezantsoa-00371820b" class="social-link linkedin">
+                <a href="https://www.linkedin.com/in/ezra-fanomezantsoa-00371820b" class="social-link linkedin" target="_blank">
                   <i class="bi bi-linkedin"></i>
                 </a>
               </div>
@@ -149,7 +149,6 @@ export default {
 <style scoped>
 .contact-section {
   padding: 80px 20px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   position: relative;
   overflow: hidden;
 }
@@ -215,11 +214,6 @@ export default {
   padding: 40px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.form-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
 }
 
 .form-group {
@@ -292,7 +286,7 @@ export default {
 .submit-btn {
   position: relative;
   background: linear-gradient(45deg, #fff, rgba(255, 255, 255, 0.9));
-  color: #667eea;
+  color: var(--primary);
   border: none;
   padding: 15px 40px;
   font-size: 16px;
@@ -344,11 +338,6 @@ export default {
   display: flex;
   align-items: center;
   gap: 20px;
-}
-
-.info-box:hover {
-  transform: translateX(10px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
 }
 
 .info-icon {

@@ -16,9 +16,9 @@
       <Resume />
     </div>
 
-    <div data-aos="fade-up" data-aos-delay="500">
-      <Contact />
-    </div>
+  </div>
+  <div data-aos="fade-up" data-aos-delay="500">
+    <Contact />
   </div>
 </template>
 
@@ -41,9 +41,14 @@ export default {
 }
 </script>
 <style>
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .home {
     margin: 0 122px;
+  }
+}
+@media (max-width: 700px) {
+  .home {
+    margin: 0 24px;
   }
 }
 </style>

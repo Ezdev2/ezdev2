@@ -81,7 +81,7 @@ export default {
   flex-direction: column;
 }
 
-.header .container{
+.header .container {
   max-width: 1200px;
 }
 
@@ -89,7 +89,7 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+
 }
 
 .logo a {
@@ -155,6 +155,7 @@ export default {
 
 .hero {
   height: 90vh;
+  padding: 122px;
   display: flex;
   align-items: center;
   position: relative;
@@ -193,6 +194,7 @@ export default {
   .header-content {
     height: 80px;
   }
+
   .navbar {
     position: fixed;
     top: 44px;
@@ -249,6 +251,13 @@ export default {
 
   .hero h1 {
     font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 </style>
