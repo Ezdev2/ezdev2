@@ -2,10 +2,10 @@
   <section id="resume" class="resume">
     <div class="container">
         <div class="section-title text-center">
-            <h2>Mon CV</h2>
-            <a href="../assets/Ezra_Fanomezantsoa_Fr.pdf" class="btn-download">
+            <h2>Curriculum vitæ</h2>
+            <a href="../assets/EZRA_FANOMEZANTSOA_CV.pdf" class="btn-download">
                 <i class="bi bi-download"></i>
-                Télécharger
+                Download CV
             </a>
         </div>
 

@@ -3,7 +3,7 @@
       <div class="container">
         <div class="section-title">
           <h2>Portfolio</h2>
-          <p>Mes réalisations</p>
+          <p>My works</p>
         </div>
         
         <div class="portfolio-filter">
@@ -52,8 +52,8 @@
       return {
         currentFilter: 'all',
         filters: [
-          { id: 'all', name: 'Tout' },
-          { id: 'web', name: 'Site web & Web app' },
+          { id: 'all', name: 'All' },
+          { id: 'web', name: 'Web & App' },
           { id: 'app', name: 'App' },
           { id: 'design', name: 'Design & logo' }
         ],
