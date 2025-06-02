@@ -7,7 +7,7 @@
 
       <div class="about-content">
         <div class="about-img">
-          <img src="/assets/img/portfolio/ez-profil.png" alt="Ezra Fanomezantsoa">
+          <img src="/assets/img/portfolio/ez-profil.jpg" alt="Ezra Fanomezantsoa">
         </div>
 
         <div class="about-info">
