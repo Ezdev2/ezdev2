@@ -32,7 +32,14 @@
             <i class="bi bi-x-lg"></i>
           </template>
           <template v-else>
-            <i class="bi bi-list"></i>
+            <svg fill="#000000" width="32px" height="32px" viewBox="0 0 0.96 0.96" id="menu" data-name="Flat Color"
+              xmlns="http://www.w3.org/2000/svg" class="icon flat-color">
+              <path id="secondary" d="M0.84 0.52H0.12a0.04 0.04 0 0 1 0 -0.08h0.72a0.04 0.04 0 0 1 0 0.08"
+                style="fill: #6366f1;" />
+              <path id="primary"
+                d="M0.84 0.76H0.36a0.04 0.04 0 0 1 0 -0.08h0.48a0.04 0.04 0 0 1 0 0.08M0.6 0.28H0.12a0.04 0.04 0 0 1 0 -0.08h0.48a0.04 0.04 0 0 1 0 0.08"
+                style="fill: #fff;" />
+            </svg>
           </template>
         </div>
       </div>
