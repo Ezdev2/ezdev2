@@ -249,6 +249,10 @@ export default {
     display: none;
   }
 
+  .hero {
+    padding: 12px;
+  }
+
   .hero h1 {
     font-size: 2.2rem;
     text-align: center;
