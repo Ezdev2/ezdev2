@@ -287,13 +287,13 @@ export default {
 @media (min-width: 800px) {
     .resume {
         padding: 60px 60px;
-        background-color: #1a202c73;
+        background-color: #1a202c3b;
         color: #e2e8f0;
     }
 }
 
 .resume {
-    background-color: #1a202c73;
+    background-color: #1a202c3b;
     color: #e2e8f0;
 }
 

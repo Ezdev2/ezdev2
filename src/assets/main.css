@@ -27,3 +27,21 @@ a,
     place-items: center;
   }
 }
+
+
+.neon-bg {
+  position: relative;
+  background-color: #0b0e14;
+  background-image: url("../assets/bg.svg");
+  background-attachment: fixed;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+.neon-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(11, 14, 20, 0.4);
+  z-index: -1;
+}

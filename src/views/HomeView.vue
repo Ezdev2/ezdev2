@@ -3,7 +3,7 @@
     <div data-aos="fade-up" data-aos-delay="100">
       <About />
     </div>
-    
+
     <div data-aos="fade-up" data-aos-delay="100">
       <Portfolio />
     </div>
@@ -12,7 +12,7 @@
       <Skills />
     </div>
 
-    <div data-aos="fade-left" data-aos-delay="200">
+    <div class="neon-bg" data-aos="fade-left" data-aos-delay="200">
       <Resume />
     </div>
 
@@ -46,6 +46,7 @@ export default {
     margin: 0 122px;
   }
 }
+
 @media (max-width: 700px) {
   .home {
     margin: 0 24px;
