@@ -20,53 +20,32 @@
             <form @submit.prevent="handleSubmit" action="https://formspree.io/f/mayravnq" method="POST">
               <div class="form-group">
                 <div class="input-wrapper">
-                  <input 
-                    type="text" 
-                    name="first-name" 
-                    v-model="form.firstName" 
-                    required 
-                    :class="{ 'has-content': form.firstName }"
-                  />
+                  <input type="text" name="first-name" v-model="form.firstName" required
+                    :class="{ 'has-content': form.firstName }" />
                   <label>First Name</label>
                   <div class="input-border"></div>
                 </div>
                 <div class="input-wrapper">
-                  <input 
-                    type="text" 
-                    name="last-name" 
-                    v-model="form.lastName" 
-                    required 
-                    :class="{ 'has-content': form.lastName }"
-                  />
+                  <input type="text" name="last-name" v-model="form.lastName" required
+                    :class="{ 'has-content': form.lastName }" />
                   <label>Last Name</label>
                   <div class="input-border"></div>
                 </div>
               </div>
-              
+
               <div class="input-wrapper">
-                <input 
-                  type="email" 
-                  name="email" 
-                  v-model="form.email" 
-                  required 
-                  :class="{ 'has-content': form.email }"
-                />
+                <input type="email" name="email" v-model="form.email" required :class="{ 'has-content': form.email }" />
                 <label>Email Address</label>
                 <div class="input-border"></div>
               </div>
-              
+
               <div class="input-wrapper">
-                <textarea 
-                  name="message" 
-                  rows="5" 
-                  v-model="form.message" 
-                  required
-                  :class="{ 'has-content': form.message }"
-                ></textarea>
+                <textarea name="message" rows="5" v-model="form.message" required
+                  :class="{ 'has-content': form.message }"></textarea>
                 <label>Your Message</label>
                 <div class="input-border"></div>
               </div>
-              
+
               <button type="submit" class="submit-btn">
                 <span class="btn-text">Send Message</span>
                 <div class="btn-ripple"></div>
@@ -79,27 +58,27 @@
         <div class="info-container">
           <div class="info-box email-box">
             <div class="info-icon">
-              <i class="bx bx-envelope"></i>
+              <i class="bi bi-envelope"></i>
             </div>
             <div class="info-content">
               <h3>Email Address</h3>
               <p><a href="mailto:fansoaezra@gmail.com">fansoaezra@gmail.com</a></p>
             </div>
           </div>
-          
+
           <div class="info-box phone-box">
             <div class="info-icon">
-              <i class="bx bx-phone-call"></i>
+              <i class="bi bi-phone"></i>
             </div>
             <div class="info-content">
               <h3>Phone</h3>
               <p>+261 34 58 332 43</p>
             </div>
           </div>
-          
+
           <div class="info-box social-box">
             <div class="info-icon">
-              <i class="bx bx-share-alt"></i>
+              <i class="bi bi-share"></i>
             </div>
             <div class="info-content">
               <h3>Social Media</h3>
@@ -107,13 +86,15 @@
                 <a href="https://github.com/Ezdev2" class="social-link github" target="_blank">
                   <i class="bi bi-github"></i>
                 </a>
-                <a href="https://www.facebook.com/profile.php?id=100009140898267" class="social-link facebook" target="_blank">
+                <a href="https://www.facebook.com/profile.php?id=100009140898267" class="social-link facebook"
+                  target="_blank">
                   <i class="bi bi-facebook"></i>
                 </a>
                 <a href="https://www.instagram.com/ezdev2/" class="social-link instagram" target="_blank">
                   <i class="bi bi-instagram"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/ezra-fanomezantsoa-00371820b" class="social-link linkedin" target="_blank">
+                <a href="https://www.linkedin.com/in/ezra-fanomezantsoa-00371820b" class="social-link linkedin"
+                  target="_blank">
                   <i class="bi bi-linkedin"></i>
                 </a>
               </div>
@@ -161,8 +142,8 @@ export default {
   right: 0;
   bottom: 0;
   background: radial-gradient(circle at 20% 50%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
-              radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
-              radial-gradient(circle at 40% 80%, rgba(120, 119, 198, 0.2) 0%, transparent 50%);
+    radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 80%, rgba(120, 119, 198, 0.2) 0%, transparent 50%);
   pointer-events: none;
 }
 
@@ -258,10 +239,10 @@ export default {
   border-bottom-color: #fff;
 }
 
-.input-wrapper input:focus + label,
-.input-wrapper textarea:focus + label,
-.input-wrapper input.has-content + label,
-.input-wrapper textarea.has-content + label {
+.input-wrapper input:focus+label,
+.input-wrapper textarea:focus+label,
+.input-wrapper input.has-content+label,
+.input-wrapper textarea.has-content+label {
   top: -10px;
   font-size: 12px;
   color: #fff;
@@ -278,8 +259,8 @@ export default {
   transition: width 0.3s ease;
 }
 
-.input-wrapper input:focus ~ .input-border,
-.input-wrapper textarea:focus ~ .input-border {
+.input-wrapper input:focus~.input-border,
+.input-wrapper textarea:focus~.input-border {
   width: 100%;
 }
 
@@ -430,7 +411,7 @@ export default {
 }
 
 .github {
-  background: rgba(51, 51, 51, 0.3);
+  background: rgba(94, 93, 93, 0.3);
 }
 
 .github::before {
@@ -466,28 +447,34 @@ export default {
     grid-template-columns: 1fr;
     gap: 40px;
   }
-  
+
   .form-group {
     grid-template-columns: 1fr;
     gap: 0;
   }
-  
+
   .form-card {
     padding: 30px 20px;
   }
-  
+
   .section-title h2 {
     font-size: 2.5rem;
   }
-  
+
   .info-box {
     flex-direction: column;
     text-align: center;
     gap: 15px;
   }
-  
+
   .info-box:hover {
     transform: translateY(-5px);
+  }
+
+  .section-title h2,
+  .section-title p,
+  .intro {
+    padding: 0 24px !important;
   }
 }
 
@@ -495,11 +482,11 @@ export default {
   .contact-section {
     padding: 60px 15px;
   }
-  
+
   .section-title h2 {
     font-size: 2rem;
   }
-  
+
   .form-card {
     padding: 25px 15px;
   }

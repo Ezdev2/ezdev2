@@ -13,7 +13,7 @@
             <li><router-link to="/" @click="closeMenu">Home</router-link></li>
             <li><router-link to="/#about" @click="closeMenu">About me</router-link></li>
             <li><router-link to="/#portfolio" @click="closeMenu">Portfolio</router-link></li>
-            <li><router-link to="/#resume" @click="closeMenu">CV</router-link></li>
+            <li><router-link to="/resume" @click="closeMenu">CV</router-link></li>
             <li><router-link to="/#contact" @click="closeMenu">Contact</router-link></li>
           </ul>
         </nav>
@@ -61,29 +61,25 @@
 
 </template>
 
-<script>
-export default {
-  name: 'HeaderComponent',
-  data() {
-    return {
-      menuActive: false
-    }
-  },
-  methods: {
-    toggleMenu() {
-      this.menuActive = !this.menuActive;
-    },
-    closeMenu() {
-      this.menuActive = false;
-    }
-  }
+<script setup>
+import { ref } from 'vue'
+
+const menuActive = ref(false)
+
+const toggleMenu = () => {
+  menuActive.value = !menuActive.value
+}
+
+const closeMenu = () => {
+  menuActive.value = false
 }
 </script>
+
 
 <style scoped>
 .header {
   position: relative;
-  background-color: var(--dark-bg);
+  background-color: transparent;
   display: flex;
   flex-direction: column;
 }

@@ -14,10 +14,10 @@
                 <div class="personal-info">
                     <h1>FANOMEZANTSOA EZRA</h1>
                     <h2>Front-End & UX/UI Developer</h2>
-                    <p class="personal-bio">Front-End Developer with 3+ years of experience building responsive and
-                        scalable web applications using Vue.js and React.js. Delivered over 10 user-centered products
-                        with a strong focus on usability, accessibility, and performance. Experienced in agile
-                        workflows, team collaboration, and cross-functional project delivery.
+                    <p class="personal-bio">Front-End Developer with 3+ years of experience building responsive web
+                        applications using Vue.js and React.js. Proven ability to deliver clean and accessible UIs,
+                        collaborate with international teams, and manage agile sprints in hybrid or remote environments.
+                        Strong background in UI design, component-based architecture, and performance optimization.
                     </p>
                     <div class="contact-details">
                         <div class="contact-item">
@@ -26,7 +26,7 @@
                         </div>
                         <div class="contact-item">
                             <i class="bi bi-telephone"></i>
-                            <span>+ 261 32 74 006 88</span>
+                            <span>+ 261 32 58 332 43</span>
                         </div>
                         <div class="contact-item">
                             <i class="bi bi-envelope"></i>
@@ -59,11 +59,11 @@
                     <div class="timeline-content">
                         <h4 class="timeline-title">Vue.js Developer</h4>
                         <ul class="timeline-description">
-                            <li>Development and maintenance of a complex web application using Vue.js</li>
-                            <li>Design and implementation of intuitive user interfaces according to functional
-                                specifications</li>
-                            <li>Collaboration with the backend team and contribution to UX improvements</li>
-                            <li>Version control with GitLab and dynamic teamwork</li>
+                            <li>Development and maintenance of a B2B SaaS platform using Vue.js</li>
+                            <li>Worked closely with backend developers (Laravel ecosystem) to integrate APIs</li>
+                            <li>Maintained codebase via GitLab; contributed to UI/UX consistency across the app</li>
+                            <li>French-based company with an affiliated office in Madagascar; role performed locally
+                                with remote collaboration with the France team.</li>
                         </ul>
                     </div>
                 </div>
@@ -105,6 +105,30 @@
 
                 <div class="timeline-item">
                     <div class="timeline-info">
+                        <span class="company">SmartParcours – AI Platform</span>
+                        <span class="location">Onifra (FJKM Ravelojaona), Madagascar</span>
+                        <span class="period">2024 – 2025</span>
+                    </div>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4 class="timeline-title">Final Year Bachelor Project</h4>
+                        <ul class="timeline-description">
+                            <li>Designed and developed an AI-driven platform to help high school students choose
+                                university programs and career paths.</li>
+                            <li>Implemented adaptive learning and recommendation algorithms for personalized guidance
+                                based on student interests.</li>
+                            <li>Built using <strong>Vue.js</strong>, <strong>Tailwind CSS</strong>, and
+                                <strong>Firebase</strong> with AI-assisted tools to optimize development.
+                            </li>
+                            <li>Gained hands-on experience with end-to-end development and AI implementation.</li>
+                            <li>Deployed and accessible at: <a href="https://smartparcours.site" target="_blank"
+                                    class="cert-link">smartparcours.site</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- <div class="timeline-item">
+                    <div class="timeline-info">
                         <span class="company">Express in Code</span>
                         <span class="location">Antananarivo, Madagascar</span>
                         <span class="period">October 2021 - January 2022</span>
@@ -117,7 +141,7 @@
                             <li>Analysis and design of user functionalities</li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
             </div>
 
             <!-- Education Section -->
@@ -127,7 +151,7 @@
             <div class="timeline-container">
                 <div class="timeline-item">
                     <div class="timeline-info">
-                        <span class="company">HEI University & Onifra</span>
+                        <span class="company">HEI University & Onifra - FJKM Ravelojaona University</span>
                         <span class="location">Antananarivo & Mahajanga</span>
                         <span class="period">2021 - 2025</span>
                     </div>
@@ -136,34 +160,153 @@
                         <h4 class="timeline-title">Bachelor in Computer Science</h4>
                         <ul class="timeline-description">
                             <li>Key coursework: Administration & Networks, Advanced Databases, Information System
-                                Security (ISS), Network Security (CNS), Web Development</li>
-                            <li>Skills: Web development (with JavaScript, React.js, Spring Boot), cybersecurity,
+                                Security, Network Security, Web Development, Project Management ,Database Optimization
+                            </li>
+                            <li>Skills: Web development (with JavaScript, React.js, Spring Boot), cybersecurity, AWS,
+                                Project Management
                                 database optimization</li>
+                            <li>Degree : <a href="https://onifra.mg/services/authdiplome/FANO0696537" target="_blank"
+                                    class="cert-link">Bachelor's Degree verification</a></li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="timeline-item">
                     <div class="timeline-info">
-                        <span class="company">ITU Academy</span>
-                        <span class="period">October 2024</span>
+                        <span class="company">Duolingo English Test</span>
+                        <span class="period">Nov 24, 2025</span>
                     </div>
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <h4 class="timeline-title">Introduction to Technical and Soft Skills</h4>
-                        <p>Skills: Turtle Stitch, Design Thinking, Problem Solving, Analytical Skills, Scratch</p>
+                        <h4 class="timeline-title">Official English Proficiency (DET)</h4>
+                        <p class="timeline-description">
+                            <strong>Score: 115</strong>. Verified professional English proficiency in literacy,
+                            comprehension, and conversation.
+                        </p>
+                        <a href="https://certs.duolingo.com/gpy36une6zkgoqp3" target="_blank" class="cert-link">View
+                            Official Result</a>
                     </div>
                 </div>
 
                 <div class="timeline-item">
                     <div class="timeline-info">
-                        <span class="company">Young African Leadership Initiative</span>
+                        <span class="company">ITU Academy Courses</span>
+                        <span class="period">October 2024</span>
+                    </div>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4 class="timeline-title">Introduction to technical and soft skills with the African Girls Can
+                            Code Initiative</h4>
+                        <p>Skills: Turtle Stitch, Design Thinking, Problem Solving, Analytical Skills, Scratch</p>
+                        <a href="https://academycourses.itu.int/badges/badge.php?hash=d557206b9df904d9b734ef7733b6f2cd77cad4f6"
+                            target="_blank" class="cert-link">View badge</a>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-info">
+                        <span class="company">YALI Network - Young African Leadership Initiative</span>
                         <span class="period">July 2024</span>
                     </div>
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <h4 class="timeline-title">Organizational Development for Volunteer-Based Initiatives</h4>
                         <p>Skills: NGO Management, Leadership, Team Leadership</p>
+                        <a href="https://drive.google.com/file/d/1e1GAwCuKWgOw8Em3Lg8I-y_dkFW-VJfA/view" target="_blank"
+                            class="cert-link">View the certificate</a>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-info">
+                        <span class="company">Oxford Home Study Centre</span>
+                        <span class="period">June 2024</span>
+                    </div>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4 class="timeline-title">Diploma in Project Management</h4>
+                        <p>Project management, planning and strategic leadership.</p>
+                        <a href="https://drive.google.com/file/d/13siVeky45Id5Sz1IGe8LZGNcTnvLjAel/view?usp=sharing"
+                            target="_blank" class="cert-link">See the reference letter</a>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-info">
+                        <span class="company">OPEN MOOCs (U.S. Dept. of State)</span>
+                        <span class="period">June 17, 2024</span>
+                    </div>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4 class="timeline-title">English for STEM Certification</h4>
+                        <p class="timeline-description">
+                            Advanced course focused on scientific language and STEM topics including Climate Change,
+                            Greenhouse Effect, and Renewable Energy.
+                            Improved technical English proficiency through the analysis of scientific experiments and
+                            future technologies.
+                        </p>
+                        <a href="https://badges.parchment.com/public/assertions/NQc9bRqrRaarfNYXOzCP-Q" target="_blank"
+                            class="cert-link">View Digital Badge</a>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-info">
+                        <span class="company">CodinGame for Work</span>
+                        <span class="period">May 30, 2024</span>
+                    </div>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4 class="timeline-title">JavaScript Language Certification</h4>
+                        <p class="timeline-description">
+                            Validated expert problem-solving skills and technical proficiency in JavaScript.
+                            This certification is a recognized industry benchmark for developer logic and coding
+                            efficiency.
+                        </p>
+                        <a href="https://www.codingame.com/certification/Dah-xRCQSiUYhhkVMD8wPA" target="_blank"
+                            class="cert-link">View Certification</a>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-info">
+                        <span class="company">IFDD (OIF) & Université Senghor</span>
+                        <span class="period">Nov 2021</span>
+                    </div>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4 class="timeline-title">Métiers de l'Environnement (Environmental Professions)</h4>
+                        <p>Environmental studies and professional specialization.</p>
+                        <a href="https://drive.google.com/file/d/1GO_8SbTbnGd3IJJpxkdEYX7sU71HcFXQ/view?usp=sharing"
+                            target="_blank" class="cert-link">View the certificate</a>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-info">
+                        <span class="company">IFDD (OIF) & Université Senghor</span>
+                        <span class="period">April 2021</span>
+                    </div>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4 class="timeline-title">Droit de l'Environnement (Environmental Law)</h4>
+                        <p>International legal framework and environmental regulations.</p>
+                        <a href="https://drive.google.com/file/d/1mDzp5digo59hk4qIw3lB3onFz3bpb736/view?usp=sharing"
+                            target="_blank" class="cert-link">View the certificate</a>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-info">
+                        <span class="company">IFDD (OIF) & Université Senghor</span>
+                        <span class="period">March 2021</span>
+                    </div>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4 class="timeline-title">Économie de l'Environnement (Environmental Economics)</h4>
+                        <p>Analysis of the economic issues related to sustainable development.</p>
+                        <a href="https://drive.google.com/file/d/1LWdPeoYS6V6zvSr3A8We4HFSilX-ofld/view?usp=sharing"
+                            target="_blank" class="cert-link">View the certificate</a>
                     </div>
                 </div>
             </div>
@@ -671,6 +814,10 @@ export default {
     transform: translateY(-2px);
 }
 
+.cert-link {
+    color: var(--link);
+}
+
 /* Responsive design */
 @media (max-width: 992px) {
     .personal-section {
@@ -688,7 +835,7 @@ export default {
     }
 
     .timeline-container::before {
-        left: 50px;
+        left: 106px;
     }
 
     .timeline-info {
@@ -738,6 +885,32 @@ export default {
 
     .timeline-marker {
         display: none;
+    }
+
+    .personal-section {
+        flex-direction: column;
+        gap: 30px;
+        text-align: start;
+    }
+
+    .personal-info h1 {
+        font-size: 1.5rem;
+    }
+
+    .personal-info h2 {
+        font-size: 1.2rem !important;
+    }
+
+    .contact-details {
+        justify-content: flex-start;
+    }
+
+    .section-header h3 {
+        font-size: 1.6rem;
+    }
+
+    .timeline-title {
+        font-size: 1.2rem;
     }
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <section id="about" class="about">
-    <div class="container">
+    <div class="">
       <div class="section-title">
         <h2>About</h2>
       </div>
@@ -116,7 +116,6 @@ export default {
   height: 3px;
   background: var(--primary);
   margin: 12px auto 0;
-  box-shadow: 0 0 15px var(--primary);
 }
 
 .about-content {
@@ -282,6 +281,32 @@ export default {
 
   .info-grid {
     grid-template-columns: 1fr;
+  }
+
+  .about-info {
+    padding: 12px;
+  }
+
+  .about-info h3 {
+    display: none;
+  }
+
+  .about-left {
+    border-radius: 20px 20px 0 0;
+    padding: 24px;
+  }
+
+  .about-content {
+    text-align: center;
+  }
+
+  .info-grid {
+    display: none;
+  }
+
+  .about-img-container {
+    width: 120px;
+    height: 120px;
   }
 }
 </style>
