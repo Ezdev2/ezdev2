@@ -56,3 +56,63 @@ a,
   -webkit-backdrop-filter: blur(15px);
   z-index: -1;
 }
+
+
+.resume-bg {
+  position: relative;
+}
+
+.resume-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    #0f172a,
+    #1e293b,
+    #020617
+  );
+  z-index: -2;
+}
+
+.resume-bg::after {
+  content: "";
+  position: absolute;
+  inset: -40%;
+  background:
+    radial-gradient(circle at 20% 30%, #0f104673, transparent 40%),
+    radial-gradient(circle at 80% 20%, #8b2c8759, transparent 45%),
+    radial-gradient(circle at 50% 80%, #22c55e11, transparent 40%);
+  filter: blur(120px);
+  z-index: -1;
+}
+
+.cert-link {
+    color: var(--link);
+}
+
+/* Masquer la scrollbar mais garder le scroll */
+.scroll-hidden {
+  overflow: auto;
+  scrollbar-width: none;      /* Firefox */
+  -ms-overflow-style: none;   /* IE / Edge legacy */
+}
+
+.scroll-hidden::-webkit-scrollbar {
+  display: none;              /* Chrome / Safari */
+}
+
+/* Custom scrollbar for modal */
+.scroll-custom::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scroll-custom::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+.scroll-custom::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 10px;
+}

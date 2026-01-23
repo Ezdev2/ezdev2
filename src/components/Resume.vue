@@ -14,7 +14,7 @@
                 <div class="personal-info">
                     <h1>FANOMEZANTSOA EZRA</h1>
                     <h2>Front-End & UX/UI Developer</h2>
-                    <p class="personal-bio">Front-End Developer with 3+ years of experience building responsive web
+                    <p class="personal-bio">Front-End Developer with 4+ years of experience building responsive web
                         applications using Vue.js and React.js. Proven ability to deliver clean and accessible UIs,
                         collaborate with international teams, and manage agile sprints in hybrid or remote environments.
                         Strong background in UI design, component-based architecture, and performance optimization.
@@ -436,7 +436,7 @@ export default {
 }
 
 .resume {
-    background-color: #1a202c3b;
+    background-color: #1f2535b4;
     color: #e2e8f0;
 }
 
@@ -812,10 +812,6 @@ export default {
 .btn-contact:hover {
     background-color: #3182ce;
     transform: translateY(-2px);
-}
-
-.cert-link {
-    color: var(--link);
 }
 
 /* Responsive design */

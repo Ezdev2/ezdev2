@@ -1,6 +1,7 @@
 <template>
   <section id="portfolio" class="portfolio">
-    <div class="">
+    <!-- Portfolio Grid View -->
+    <div class="portfolio-container">
       <div class="section-title">
         <h2>Portfolio</h2>
         <p>My works</p>
@@ -8,7 +9,8 @@
 
       <div class="portfolio-filter">
         <button v-for="filter in filters" :key="filter.id"
-          :class="['filter-btn', { active: currentFilter === filter.id }]" @click="filterProjects(filter.id)">
+          :class="['filter-btn', { active: currentFilter === filter.id }]" 
+          @click="filterProjects(filter.id)">
           {{ filter.name }}
         </button>
       </div>
@@ -25,7 +27,7 @@
                 <a v-if="project.link" :href="project.link" target="_blank" class="link-icon">
                   <i class="bi bi-link-45deg"></i>
                 </a>
-                <a :href="project.image" class="preview-icon">
+                <a @click.prevent="openProjectDetails(project)" class="preview-icon">
                   <i class="bi bi-plus-lg"></i>
                 </a>
               </div>
@@ -34,196 +36,107 @@
         </div>
       </div>
     </div>
+
+    <!-- Project Detail Modal - Teleported to body -->
+    <Teleport to="body">
+      <transition name="modal-fade">
+        <div v-if="selectedProject" class="modal-overlay" @click="closeProjectDetails">
+          <div class="modal-container" @click.stop>
+            <button @click="closeProjectDetails" class="close-button">
+              <i class="bi bi-x-lg"></i>
+            </button>
+
+            <button @click="closeProjectDetails" class="back-button">
+              <i class="bi bi-arrow-left"></i> Back to Portfolio
+            </button>
+
+            <div class="project-detail-container">
+              <div class="project-image-section">
+                <div class="mesh-gradient"></div>
+                <div class="image-wrapper">
+                  <img 
+                    :src="selectedProject.image" 
+                    :alt="selectedProject.title"
+                    :class="{ 'zoomed': isZoomed }"
+                    @click="toggleZoom"
+                  >
+                </div>
+              </div>
+
+              <div class="project-info-section">
+                <h2 class="project-title">{{ selectedProject.title }}</h2>
+                
+                <div class="project-details">
+                  <!-- Client Info -->
+                  <div class="detail-item">
+                    <p class="client-text">{{ selectedProject.client }}</p>
+                  </div>
+
+                  <!-- Year & Stack -->
+                  <div class="detail-item">
+                    <h3>Year & Technologies</h3>
+                    <p class="year-text">{{ selectedProject.year }}</p>
+                    <div class="tech-stack">
+                      <span v-for="(tech, index) in selectedProject.stack" :key="index" class="tech-badge">
+                        {{ tech }}
+                      </span>
+                    </div>
+                  </div>
+
+                  <!-- Project Goal -->
+                  <div class="detail-item">
+                    <h3>Project Goal</h3>
+                    <p>{{ selectedProject.goal }}</p>
+                  </div>
+
+                  <!-- Key Features -->
+                  <div class="detail-item">
+                    <h3>Key Features</h3>
+                    <ul>
+                      <li v-for="(feature, index) in selectedProject.features" :key="index">
+                        {{ feature }}
+                      </li>
+                    </ul>
+                  </div>
+
+                  <!-- Description -->
+                  <div class="detail-item">
+                    <h3>Description</h3>
+                    <p>{{ selectedProject.description }}</p>
+                  </div>
+
+                  <!-- Project Link -->
+                  <div v-if="selectedProject.link" class="project-link">
+                    <a :href="selectedProject.link" target="_blank">
+                      <i class="bi bi-link-45deg"></i> Visit Live Project
+                    </a>
+                  </div>
+                </div>
+
+                <a href="#contact" @click="closeProjectDetails" class="cta-button">
+                  I Want to Build Something Like This
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </transition>
+    </Teleport>
   </section>
 </template>
 
 <script>
+import { portfolioData } from '../data/dataPortfolio.js';
+
 export default {
   name: 'PortfolioSection',
   data() {
     return {
       currentFilter: 'all',
-      filters: [
-        { id: 'all', name: 'All' },
-        { id: 'web', name: 'Web & App' },
-        { id: 'app', name: 'App' },
-        { id: 'design', name: 'Design & logo' }
-      ],
-      projects: [
-        {
-          id: 1,
-          title: 'SmartParcours',
-          thumbnail: '/assets/img/portfolio/smart-thumb.png',
-          image: '/assets/img/portfolio/smart.png',
-          link: 'https://smartparcours.site/',
-          categories: ['web']
-        },
-        {
-          id: 2,
-          title: 'Ondes Actives',
-          thumbnail: '/assets/img/portfolio/ondes-thumb.png',
-          image: '/assets/img/portfolio/ondes.png',
-          link: 'https://ondesactives.com/',
-          categories: ['web']
-        },
-        {
-          id: 3,
-          title: 'Createak',
-          thumbnail: '/assets/img/portfolio/createak-thumb.png',
-          image: '/assets/img/portfolio/createak.png',
-          link: 'https://createak.mu/',
-          categories: ['web']
-        },
-        {
-          id: 4,
-          title: 'Liste universités et institutions habilitées à Madagascar',
-          thumbnail: '/assets/img/portfolio/uni-thumb.png',
-          image: '/assets/img/portfolio/uni.png',
-          link: 'https://universite.smartparcours.site/',
-          categories: ['web']
-        },
-        {
-          id: 5,
-          title: 'Casano Site',
-          thumbnail: '/assets/img/portfolio/casano-agency-thumb.png',
-          image: '/assets/img/portfolio/casano-agency.png',
-          link: 'https://casano-site.netlify.app/',
-          categories: ['web']
-        },
-        {
-          id: 6,
-          title: 'OniFRa Mahajanga',
-          thumbnail: '/assets/img/portfolio/onifra-thumb.png',
-          image: '/assets/img/portfolio/onifra.png',
-          link: 'https://onifra-mahajanga.netlify.app/',
-          categories: ['web']
-        },
-        {
-          id: 7,
-          title: 'Meight',
-          thumbnail: '/assets/img/portfolio/meight-thumb.png',
-          image: '/assets/img/portfolio/meight.png',
-          link: 'https://meight.netlify.app/',
-          categories: ['web']
-        },
-        {
-          id: 8,
-          title: 'Template Vue js',
-          thumbnail: '/assets/img/portfolio/template-thumb.png',
-          image: '/assets/img/portfolio/template.png',
-          link: 'https://website-vue-template.netlify.app',
-          categories: ['web']
-        },
-        {
-          id: 9,
-          title: 'Car rental',
-          thumbnail: '/assets/img/portfolio/location-voiture-thumb.png',
-          image: '/assets/img/portfolio/location-voiture.png',
-          link: 'https://maki-car-rental-mada.netlify.app/',
-          categories: ['web']
-        },
-        {
-          id: 10,
-          title: 'Portfolio Ezra',
-          thumbnail: '/assets/img/portfolio/portfolio-thumb.png',
-          image: '/assets/img/portfolio/portfolio.png',
-          link: 'https://fansoaezra.epizy.com/',
-          categories: ['web']
-        },
-        {
-          id: 11,
-          title: 'Portfolio Kezia',
-          thumbnail: '/assets/img/portfolio/kezia-thumb.png',
-          image: '/assets/img/portfolio/kezia.png',
-          link: 'https://keziafa.netlify.app/',
-          categories: ['web']
-        },
-        {
-          id: 12,
-          title: 'Pinkscrap',
-          thumbnail: '/assets/img/portfolio/pinkscrap-thumb.png',
-          image: '/assets/img/portfolio/pinkscrap.png',
-          link: 'https://pinkscrap2.netlify.app/',
-          categories: ['web']
-        },
-        {
-          id: 13,
-          title: 'Orus Solution',
-          thumbnail: '/assets/img/portfolio/orus-solutions-thumb.png',
-          image: '/assets/img/portfolio/orus-solutions.png',
-          link: 'https://fansoadev.github.io/orussite/',
-          categories: ['web']
-        },
-        {
-          id: 14,
-          title: 'Green Cycle Rescue',
-          thumbnail: '/assets/img/portfolio/green-cycle-rescue-thumb.png',
-          image: '/assets/img/portfolio/green-cycle-rescue.png',
-          link: 'https://fansoaezra.wordpress.com/',
-          categories: ['web']
-        },
-        {
-          id: 15,
-          title: 'Association Mampiarina',
-          thumbnail: '/assets/img/portfolio/association-mampiarina-thumb.png',
-          image: '/assets/img/portfolio/association-mampiarina.png',
-          link: 'https://associationmampiarina.webflow.io/',
-          categories: ['web']
-        },
-        {
-          id: 16,
-          title: 'Artiist',
-          thumbnail: '/assets/img/portfolio/artiist-thumb.png',
-          image: '/assets/img/portfolio/artiist.png',
-          // link: 'https://www.artiist.fr/',
-          categories: ['design']
-        },
-        {
-          id: 17,
-          title: 'Chat App',
-          thumbnail: '/assets/img/portfolio/genius-thumb.png',
-          image: '/assets/img/portfolio/genius.png',
-          // link: 'https://my-chat.app/',
-          categories: ['design']
-        },
-        {
-          id: 18,
-          title: 'Immo project',
-          thumbnail: '/assets/img/portfolio/Immo-thumb.png',
-          image: '/assets/img/portfolio/Immo.png',
-          // link: 'https://immoch.my-preprod.space/',
-          categories: ['design']
-        },
-        {
-          id: 19,
-          title: 'Safly Design',
-          thumbnail: '/assets/img/portfolio/safly-post-thumb.png',
-          image: '/assets/img/portfolio/safly-post.png',
-          categories: ['design']
-        },
-        // {
-        //   id: 19,
-        //   title: 'Safly Design',
-        //   thumbnail: '/assets/img/portfolio/safly-mockup-thumb.png',
-        //   image: '/assets/img/portfolio/safly-mockup.png', 
-        //   link: 'https://www.figma.com/proto/kdTsQCZTmkRgTE171vXhXK/Safly?page-id=21%3A2076&node-id=145%3A1262&viewport=336%2C288%2C0.05&scaling=min-zoom&starting-point-node-id=145%3A414',
-        //   categories: ['app', 'design']
-        // },
-        {
-          id: 20,
-          title: 'Logo gasyware technology',
-          thumbnail: '/assets/img/portfolio/logo-gasyW-thumb.png',
-          image: '/assets/img/portfolio/logo-gasyW.png',
-          categories: ['design']
-        },
-        {
-          id: 21,
-          title: 'Logo Createak',
-          thumbnail: '/assets/img/portfolio/logo-creat-thumb.png',
-          image: '/assets/img/portfolio/logo-creat.png',
-          categories: ['design']
-        }
-      ]
+      selectedProject: null,
+      isZoomed: false,
+      filters: portfolioData.filters,
+      projects: portfolioData.projects
     }
   },
   computed: {
@@ -239,7 +152,23 @@ export default {
   methods: {
     filterProjects(filter) {
       this.currentFilter = filter;
+    },
+    openProjectDetails(project) {
+      this.selectedProject = project;
+      this.isZoomed = false;
+      document.body.style.overflow = 'hidden';
+    },
+    closeProjectDetails() {
+      this.selectedProject = null;
+      this.isZoomed = false;
+      document.body.style.overflow = '';
+    },
+    toggleZoom() {
+      this.isZoomed = !this.isZoomed;
     }
+  },
+  beforeUnmount() {
+    document.body.style.overflow = '';
   }
 }
 </script>
@@ -335,6 +264,7 @@ export default {
   color: white;
   border-radius: 50%;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .portfolio-links a:hover {
@@ -352,6 +282,340 @@ export default {
     height: 150px;
     object-fit: cover;
     display: block;
+  }
+}
+</style>
+
+<!-- Global styles for modal (not scoped) -->
+<style>
+/* Modal Overlay & Container */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.modal-container {
+  position: relative;
+  width: 100%;
+  max-width: 1600px;
+  background: #0a0a0a;
+  border-radius: 20px;
+  padding: 40px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+/* Custom scrollbar for modal */
+.modal-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-container::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+.modal-container::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 10px;
+}
+
+/* Modal Transitions */
+.modal-fade-enter-active,
+.modal-fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.modal-fade-enter-from,
+.modal-fade-leave-to {
+  opacity: 0;
+}
+
+.modal-fade-enter-active .modal-container,
+.modal-fade-leave-active .modal-container {
+  transition: transform 0.3s ease;
+}
+
+.modal-fade-enter-from .modal-container,
+.modal-fade-leave-to .modal-container {
+  transform: scale(0.9);
+}
+
+/* Close Button */
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-button:hover {
+  background: var(--primary);
+  transform: rotate(90deg);
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.back-button:hover {
+  background: var(--primary);
+  color: white;
+  transform: translateX(-5px);
+}
+
+.project-detail-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.project-image-section {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 40px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.mesh-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(at 27% 37%, hsla(215, 98%, 61%, 0.3) 0px, transparent 50%),
+    radial-gradient(at 97% 21%, hsla(125, 98%, 72%, 0.2) 0px, transparent 50%),
+    radial-gradient(at 52% 99%, hsla(354, 98%, 61%, 0.3) 0px, transparent 50%),
+    radial-gradient(at 10% 29%, hsla(256, 96%, 67%, 0.2) 0px, transparent 50%),
+    radial-gradient(at 97% 96%, hsla(38, 60%, 74%, 0.2) 0px, transparent 50%),
+    radial-gradient(at 33% 50%, hsla(222, 67%, 73%, 0.3) 0px, transparent 50%),
+    radial-gradient(at 79% 53%, hsla(343, 68%, 79%, 0.2) 0px, transparent 50%);
+  filter: blur(80px);
+  opacity: 0.6;
+}
+
+.image-wrapper {
+  position: relative;
+  z-index: 1;
+  max-width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  cursor: zoom-in;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.image-wrapper img.zoomed {
+  transform: scale(1.5);
+  cursor: zoom-out;
+}
+
+.project-info-section {
+  color: white;
+  padding: 20px;
+}
+
+.project-title {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: var(--primary);
+}
+
+.project-details {
+  margin-bottom: 40px;
+}
+
+.detail-item {
+  margin-bottom: 30px;
+}
+
+.detail-item h3 {
+  font-size: 18px;
+  color: var(--primary);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.client-text {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #a0a0a0;
+  font-style: italic;
+}
+
+.year-text {
+  font-size: 16px;
+  color: #d0d0d0;
+  margin-bottom: 10px;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.tech-badge {
+  padding: 6px 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--primary);
+  border-radius: 20px;
+  font-size: 14px;
+  color: #d0d0d0;
+}
+
+.detail-item p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #d0d0d0;
+}
+
+.detail-item ul {
+  list-style: none;
+  padding: 0;
+}
+
+.detail-item ul li {
+  padding: 8px 0;
+  padding-left: 20px;
+  position: relative;
+  color: #d0d0d0;
+}
+
+.detail-item ul li:before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+}
+
+.project-link {
+  margin-top: 20px;
+}
+
+.project-link a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--link);
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.project-link a:hover {
+  color: white;
+  transform: translateX(5px);
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 16px 32px;
+  background: var(--primary);
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 1024px) {
+  .project-detail-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .project-image-section {
+    padding: 20px;
+  }
+
+  .modal-container {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-title {
+    font-size: 28px;
+  }
+
+  .back-button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .cta-button {
+    font-size: 16px;
+    padding: 14px 28px;
+  }
+
+  .modal-overlay {
+    padding: 10px;
+  }
+
+  .modal-container {
+    padding: 20px 15px;
+    max-height: 95vh;
+  }
+
+  .close-button {
+    top: 10px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
   }
 }
 </style>

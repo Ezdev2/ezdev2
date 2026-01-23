@@ -11,7 +11,7 @@
         <i class="bi bi-chevron-left"></i>
         <span>Home</span>
       </button>
-      <main class="neon-bg">
+      <main class="resume-bg">
         <router-view class="resume" />
       </main>
     </div>
@@ -114,7 +114,6 @@ section {
 .go-back {
   position: absolute;
   display: flex;
-  align-items: center;
   gap: 6px;
   padding: 24px 80px;
   background: transparent;
@@ -123,7 +122,7 @@ section {
   font-size: 0.95rem;
   font-weight: 500;
   cursor: pointer;
-  z-index: 0;
+  z-index: 1;
   transition: all 0.25s ease;
 }
 

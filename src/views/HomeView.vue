@@ -12,7 +12,7 @@
       <Skills />
     </div>
 
-    <div class="neon-bg" data-aos="fade-left" data-aos-delay="200">
+    <div data-aos="fade-left" data-aos-delay="200">
       <Resume />
     </div>
 
@@ -52,4 +52,5 @@ export default {
     margin: 0 24px;
   }
 }
+
 </style>
