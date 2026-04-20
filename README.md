@@ -1,6 +1,6 @@
 <h1 align="center"> Hi, I'm Ezra! 👋 🇲🇬</h1>
 <p align="center">
-  <b>Core Software Engineer | AI & ML Research</b><br>
+  <b>Core Software Engineer | AI & ML Student</b><br>
   Bridging the gap between <b>Physical Hardware</b>, <b>High-Performance Systems</b>, and <b>Neural Networks</b>.
 </p>
 <p align="center">
