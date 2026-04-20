@@ -1,38 +1,42 @@
 <h1 align="center"> Hi, I'm Ezra! 👋 🇲🇬</h1>
 <p align="center">
-  I'm a passionate developer with a love for all things tech! 🌍 As a Frontend Developer, I thrive on creating interactive and dynamic user experiences, but my curiosity spans the entire stack. If you share my enthusiasm for technologies like Vue.js, React.js, and more, let's collaborate and build something amazing together!
+  <b>Core Software Engineer | AI & ML Research 🧪</b><br>
+  Bridging the gap between <b>Physical Hardware</b>, <b>High-Performance Systems</b>, and <b>Neural Networks</b>.
+</p>
+<p align="center">
+  Currently building <b>ScentLib</b>, the global binary standard for digital olfaction.
+  I transform electrical signals into molecular intelligence.
 </p>
 
 [![trophy](https://github-profile-trophy.vercel.app/?username=ezdev2&theme=algolia)](https://github.com/ryo-ma/github-profile-trophy)
 
-<table width="600px" align="center">
+<table align="center">
     <tr>
-        <td>
-            <h2 align="center">Social Media</h2>
-            <div id="badges" align="center">
-                <a href="https://www.facebook.com/profile.php?id=100009140898267"><img src="https://img.shields.io/badge/Facebook-blue?logo=facebook&logoColor=white&style=for-the-badge" alt="facebook"></a>
-                <a href="https://github.com/ezdev2"><img src="https://img.shields.io/badge/Github-orange?logo=github&logoColor=black&style=for-the-badge" alt="Github"></a> <br>
-                <a href="https://www.linkedin.com/in/ezra-fanomezantsoa-00371820b"><img src="https://img.shields.io/badge/Linkedin-blue?logo=linkedin&logoColor=white&style=for-the-badge" alt="linkedin"></a> <br>
-                <a href="mailto:fansoaezra@gmail.com"><img src="https://img.shields.io/badge/E.Mail-red?logo=mail&logoColor=red&style=for-the-badge" alt="mail"></a>
+        <td valign="top" width="33%">
+            <h3 align="center">Core & Systems</h3>
+            <div align="center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="35"/>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width="35"/>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" width="35"/>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/embeddedc/embeddedc-original.svg" width="35"/>
             </div>
         </td>
-        <td>
-            <h2 align="center">Languages, Frameworks & Tools</h2>
-            <div id="tecno" align="center">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" alt="html" width="40"/>&nbsp;
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" alt="css" width="40"/>&nbsp;
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="vue" width="40"/>&nbsp;
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" alt="react" width="40"/>&nbsp;
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="javascript" width="40"/>&nbsp; 
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="java" width="40"/>&nbsp;
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="python" width="40"/>&nbsp;
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg" alt="vs code" width="40"/>&nbsp;
-                <img src="https://user-images.githubusercontent.com/607635/94574444-24e43f00-0241-11eb-95e8-add939c5cacb.png" alt="airtable" width="40"/>&nbsp;
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="figma" width="40"/>&nbsp;
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg" alt="ubuntu" width="40"/>&nbsp;
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="postgresql" width="40"/>&nbsp;
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github" width="40"/>&nbsp;
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" alt="gitlab" width="40"/>&nbsp;
+        <td valign="top" width="33%">
+            <h3 align="center">AI & Data</h3>
+            <div align="center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" width="35"/>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" width="35"/>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="35"/>
+                <img src="https://img.shields.io/badge/Polars-FFD600?logo=polars&logoColor=black" height="35"/>
+            </div>
+        </td>
+        <td valign="top" width="33%">
+            <h3 align="center">Frontend & UI</h3>
+            <div align="center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="35"/>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="35"/>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" width="35"/>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" width="35"/>
             </div>
         </td>
     </tr>
@@ -51,7 +55,16 @@
     </tr>
 </table>
 
-## 🚀 Featured Project
-Check out my [Vue.js Template](https://github.com/Ezdev2/website-vue-template) to kickstart your frontend projects!
+## Featured Research & Development: ScentLib
+**The "VLC for Smells" – An Open-Source Ecosystem for Digital Olfaction.**
 
-[![Click to View Template](https://github.com/Ezdev2/ezdev2/blob/main/website-vue-template.png)](https://website-vue-template.netlify.app)
+* **ScentLib Core:** High-performance binary codec (`.scent`) and Python SDK.
+* **ScentPredictor:** Graph Neural Networks (GNN) for molecular-to-odor prediction.
+* **Hardware:** ESP32-based acquisition (ScentBox) & microfluidic synthesis (ScentOutput).
+
+[Explore the Blueprint](https://github.com/Ezdev2/ScentLib)
+
+## Hardcore Skills in Progress
+- **Binary Data Optimization:** Packing 64-bit floats into `float16` and custom binary streams for high-performance IoT.
+- **Molecular Graph Learning:** Researching Graph Neural Networks (GNNs) for olfactory perceptual alignment.
+- **Embedded Performance:** Real-time signal processing on ESP32, including Kalman filters and ADC noise reduction.
