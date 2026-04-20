@@ -1,14 +1,12 @@
 <h1 align="center"> Hi, I'm Ezra! 👋 🇲🇬</h1>
 <p align="center">
-  <b>Core Software Engineer | AI & ML Research 🧪</b><br>
+  <b>Core Software Engineer | AI & ML Research</b><br>
   Bridging the gap between <b>Physical Hardware</b>, <b>High-Performance Systems</b>, and <b>Neural Networks</b>.
 </p>
 <p align="center">
   Currently building <b>ScentLib</b>, the global binary standard for digital olfaction.
   I transform electrical signals into molecular intelligence.
 </p>
-
-[![trophy](https://github-profile-trophy.vercel.app/?username=ezdev2&theme=algolia)](https://github.com/ryo-ma/github-profile-trophy)
 
 <table align="center">
     <tr>
@@ -62,7 +60,7 @@
 * **ScentPredictor:** Graph Neural Networks (GNN) for molecular-to-odor prediction.
 * **Hardware:** ESP32-based acquisition (ScentBox) & microfluidic synthesis (ScentOutput).
 
-[Explore the Blueprint](https://github.com/Ezdev2/ScentLib)
+[Explore ScentLib](https://github.com/Ezdev2/ScentLib)
 
 ## Hardcore Skills in Progress
 - **Binary Data Optimization:** Packing 64-bit floats into `float16` and custom binary streams for high-performance IoT.
