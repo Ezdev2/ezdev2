@@ -1,7 +1,6 @@
 <h1 align="center"> Hi, I'm Ezra! 👋 🇲🇬</h1>
 <p align="center">
-  <b>Core Software Engineer | AI & ML Student</b><br>
-  Bridging the gap between <b>Physical Hardware</b>, <b>High-Performance Systems</b>, and <b>Neural Networks</b>.
+  <b>Computer Science graduate + AI/ML researcher developing open infrastructure for digital olfaction.</b>
 </p>
 <p align="center">
   Currently building <b>ScentLib</b>, the global binary standard for digital olfaction.
